@@ -77,7 +77,7 @@ class PaymentController extends Controller
             return response()->json([
                 'message' => 'An error occurred while processing your request.',
                 'error' => $e->getMessage(),
-            ], 500);
+            ], 50);
         }
     }
 }
